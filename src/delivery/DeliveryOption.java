@@ -5,9 +5,13 @@ import entities.Pizza;
 public class DeliveryOption extends Pizza {
 
     Pizza pizza;
+    private double distance;
+    private final double BASE_DELIVERY_FEE = 5.00;
+    private final double FEE_PER_KM = 0.50;
 
-    public DeliveryOption(Pizza pizza) {
+    public DeliveryOption(Pizza pizza,double distance) {
         this.pizza = pizza;
+        this.distance = distance;
     }
 
     @Override
@@ -17,7 +21,10 @@ public class DeliveryOption extends Pizza {
 
     @Override
     public double cost() {
-        return pizza.cost() + 7.00;
+        double baseCost = pizza.cost();
+        double deliveryFee = BASE_DELIVERY_FEE + (FEE_PER_KM * distance);
+        return baseCost + deliveryFee;
+
     }
 
 
