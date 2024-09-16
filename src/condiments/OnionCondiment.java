@@ -1,8 +1,8 @@
-package Condiments;
+package condiments;
 
 import entities.Pizza;
 
-public class OnionCondiment extends PizzaCondimentsDecorator{
+public class OnionCondiment extends PizzaCondimentsDecorator {
 
     Pizza pizza;
 
@@ -17,6 +17,6 @@ public class OnionCondiment extends PizzaCondimentsDecorator{
 
     @Override
     public double cost() {
-        return 0.50 + pizza.cost();
+        return pizza.cost() + 0.50;
     }
 }

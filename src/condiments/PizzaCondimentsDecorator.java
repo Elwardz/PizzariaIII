@@ -1,4 +1,4 @@
-package Condiments;
+package condiments;
 
 import entities.Pizza;
 

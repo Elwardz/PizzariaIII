@@ -1,8 +1,8 @@
 package application;
 
-import Condiments.BaconCondiment;
-import Condiments.ExtraCheeseCondiment;
-import Condiments.OnionCondiment;
+import condiments.BaconCondiment;
+import condiments.ExtraCheeseCondiment;
+import condiments.OnionCondiment;
 import entities.ChickenPizza;
 import entities.PepperoniPizza;
 import entities.Pizza;

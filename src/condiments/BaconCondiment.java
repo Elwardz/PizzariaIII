@@ -1,4 +1,4 @@
-package Condiments;
+package condiments;
 
 import entities.Pizza;
 
@@ -15,7 +15,7 @@ public class BaconCondiment extends PizzaCondimentsDecorator {
     }
 
     public double cost() {
-        return 1.00 + pizza.cost();
+        return pizza.cost() + 1.00;
 
     }
 }
