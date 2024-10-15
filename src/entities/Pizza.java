@@ -1,8 +1,6 @@
 package entities;
 
-import composite.MenuComponent;
-
-public abstract class Pizza extends MenuComponent {
+public abstract class Pizza {
 
     String description = "Unknow Pizza";
 
