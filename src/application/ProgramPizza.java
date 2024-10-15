@@ -31,6 +31,6 @@ public class ProgramPizza {
         System.out.println(allPizzas.getDescription());
 
         // Custo total
-        System.out.println("Total cost: $" + allPizzas.cost());
+        System.out.println("Total cost: $" + allPizzas.cost()); //
     }
 }
