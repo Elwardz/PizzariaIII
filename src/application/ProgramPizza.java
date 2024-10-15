@@ -4,10 +4,13 @@ import condiments.*;
 import entities.*;
 import pizzasize.*;
 import delivery.*;
+import java.util.Locale;
 
 public class ProgramPizza {
 
     public static void main(String[] args) {
+
+        Locale.setDefault(Locale.US);
 
         // Pedido de uma pizza online com entrega
         Pizza pizza1 = new PepperoniPizza();
